@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<style>
+    header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color:#797474;
+        z-index: 1000;
+    }
+
+    .nav-link{
+        color: #fff;
+    }
+
+        
+</style>
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <h1>Título do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <nav class="collapse navbar-collapse justify-content-end " id="menu">
+                <ul class="nav-pills navbar-nav flex-column flex-sm-row">
+                    <li class="nav-item">
+                        <a class="nav-link active me-2" href="#backend">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#frontend">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#fullstack">Promoções</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    
+    <div class="container">
+    <div id="carousel-example" class="carousel carousel-fade slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+            <div data-bs-interval="3000"  class="carousel-item active">
+                <img class="w-100" src="https://cdn.pixabay.com/photo/2024/03/02/19/30/magnolia-8609277_1280.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="w-100" src="https://cdn.pixabay.com/photo/2023/10/11/18/00/sea-8309203_1280.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="w-100 " src="https://cdn.pixabay.com/photo/2023/11/08/21/11/crab-8375791_1280.jpg" alt="">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-example" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" ></span>
+        </button>
+        <button data-bs-target="#carousel-example" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" ></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div class="row justify-content-center mt-5">
+        <div class="col-sm-6 col-md-4 col-12 mt-sm-4 mt-4">
+            <article class="card ">
+                <div id="backend" class="card-header">
+                    Desenvolvimento backend
+                </div>
+                <img class="w-100" src="earth-11009_640.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Cards do bootstrap</h4>
+                    <h5 class="card-subtitle">Subtítulo</h5>
+                    <p class="card-text">Conheça o desenvolvimento backend</p>
+                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+            </article>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-12 mt-sm-4 mt-4">
+            <article class="card">
+                <div id="frontend" class="card-header">
+                    Desenvolvimento frontend
+                </div>
+                <img class="w-100" src="earth-11009_640.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Cards do bootstrap</h4>
+                    <h5 class="card-subtitle">Subtítulo</h5>
+                    <p class="card-text">Conheça o desenvolvimento backend</p>
+                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+            </article>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 col-12 mt-sm-4 mt-4">
+            <article class="card">
+                <div id="fullstack" class="card-header">
+                    Desenvolvimento fullstack
+                </div>
+                <img class="w-100" src="earth-11009_640.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Cards do bootstrap</h4>
+                    <h5 class="card-subtitle">Subtítulo</h5>
+                    <p class="card-text">Conheça o desenvolvimento backend</p>
+                </div>
+                <a href="#" class="btn btn-primary">Leia mais</a>
+            </article>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
